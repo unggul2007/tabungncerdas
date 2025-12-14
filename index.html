@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Login Menabung</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="light">
+
+  <div class="card">
+    <h2>Login Menabung</h2>
+    <input id="username" placeholder="Username">
+    <input id="pin" type="password" placeholder="PIN">
+    <button onclick="login()">Masuk</button>
+  </div>
+
+<script>
+function login() {
+  const user = document.getElementById("username").value;
+  const pin = document.getElementById("pin").value;
+
+  if (user && pin) {
+    localStorage.setItem("user", user);
+    localStorage.setItem("pin", pin);
+    window.location.href = "dashboard.html";
+  } else {
+    alert("Isi username dan PIN!");
+  }
+}
+</script>
+
+</body>
+</html>
