@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard Menabung</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="body">
+
+<div class="container">
+  <h2>Halo, <span id="nama"></span> 👋</h2>
+
+  <h3>Total Tabungan: Rp <span id="total">0</span></h3>
+
+  <h3>📅 Jadwal Menabung Mingguan</h3>
+
+  <table>
+    <tr><th>Hari</th><th>Jumlah</th><th>✔</th></tr>
+    <tbody id="jadwal"></tbody>
+  </table>
+
+  <h3>🎨 Ganti Tema</h3>
+  <button onclick="setTema('light')">Light</button>
+  <button onclick="setTema('dark')">Dark</button>
+  <button onclick="setTema('blue')">Biru</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
